@@ -45,7 +45,7 @@ function createNewCard(){
     let newCard = document.createElement("div")
     let info = document.createElement("div")
     info.classList.add("info")
-    info.innerHTML =  "<strong>"+ userData.results[nameIndex].name.first + " " + userData.results[nameIndex].name.last + "</strong> " + (parseInt(Math.random()*90+18).toString()) + " år."
+    info.innerHTML =  "<strong>"+ userData.results[nameIndex].name.first + " " + userData.results[nameIndex].name.last + "</strong> " + (parseInt(Math.random()*100).toString()) + " år."
     newCard.classList.add("card")
     newCard.style.backgroundImage ="url(bilder/ola/"+(parseInt(Math.random()*14).toString())+".png)"
     document.querySelector(".card-container").appendChild(newCard)
